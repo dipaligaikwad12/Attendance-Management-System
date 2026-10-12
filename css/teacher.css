@@ -1,0 +1,72 @@
+.full-page-container{
+    
+}
+.Dashboard-name{
+    margin: 20px 20px;
+    color: darkslategray;
+}
+.dashboard-card{
+    width: 250px;
+    height: 600px;
+    margin: 30px 80px;
+    height: 70px;
+    padding: 10px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 1px 1px 2px 2px #669999;
+}
+
+.dash-icon{
+    margin-left: 100px;
+    color: #000099;
+}
+.font{
+    font-size: 20px;
+}
+.dash-container{
+   display: flex;
+   
+}
+.attendanceView-container{
+    display: flex;
+}
+.viweAttendance-card{
+    background-color:#fff;
+    margin-left: 30px;
+    border-radius: 20px;
+    box-shadow: 0px 0px 2px 2px gray;
+    padding-left:  15px;
+    width: 960px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    margin-bottom: 20px;
+}
+.viweAttendance-card:hover{
+    box-shadow: 0px 0px 2px 3px gray;
+}
+.form-control-label{
+    font-size: 22px;
+}
+.form-control{
+    width: 300px;
+    font-size: 18px;
+    padding: 2px;
+    margin-left: 5px;
+}
+.btn-view{
+    background-color: rgb(94, 175, 196);
+    font-size: 20px;
+    width: 200px;
+    border-radius: 10px;
+    border: none;
+    padding: 5px;
+    margin: 10px;
+    box-shadow: 0px 1px 3px 2px #463737;
+}
+.btn-view:hover{
+    transition: 0.5s;
+    background-color:rgb(14, 121, 148) ;
+    cursor: pointer;
+    border-radius:8px ;
+    box-shadow: 1px 1px 2px 2px #000;
+}

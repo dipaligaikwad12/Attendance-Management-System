@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./../css/style.css">
+    <link rel="stylesheet" href="./../css/teacher.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="header">
+        <img src="./../image/logo.png" style="height: 40px; width: 40px; padding: 8px;" />
+        <i class="fa-solid fa-bars head-icon icon" onclick="openSidebar()"></i>
+        
+    </div>
+    <div class="full-page-container">
+        <div class="sidebar-container">
+            <div class="icon-container">
+                <i class="fas fa-fw fa-tachometer-alt icon"></i>
+                <span class="macondo-regular side-text">Dashboard</span></a>
+            </div>
+            <hr />
+            <span class="name-icon">STUDENTS</span>
+            <div class="icon-container">
+                <i class="fas fa-user-graduate icon"></i>
+                <span class="macondo-regular side-text">Manage Students</span>
+                <a class="icon-sub-item" href="viewStudents.html">View Students</a>
+            </div>
+
+            <hr />
+            <span class="name-icon">ATTENDANCE</span>
+            <div class="icon-container">
+                <i class="fa fa-calendar-alt icon"></i>
+                <span class="macondo-regular side-text">Manage Attendance</span>
+                <a class="icon-sub-item " href="takeAttendance.php">Take Attendance</a><br /><br />
+                <a class="icon-sub-item " href="viewAttendance.php">View Class Attendance</a><br /><br />
+                <a class="icon-sub-item " href="viewStudentAttendance.php">View Student Attendance</a>
+            </div>
+        </div>
+
+        <div class="dash-container">
+            <h1 class="Dashboard-name">Class Teacher Dashboard (
+                <?php echo $rrw['className'].' - '.$rrw['classArmName'];?>)
+            </h1>
+            <div class="full-page-container">
+                <div>
+                <div class="dashboard-card">
+                    <?php 
+                    $query1=mysqli_query($conn,"SELECT * from tblstudents where classId = '$_SESSION[classId]' and classArmId = '$_SESSION[classArmId]'");                       
+                    $students = mysqli_num_rows($query1);
+                    ?>
+                    <div class="font">Students</div>
+                    <div class="font">
+                        <?php echo $students;?>
+                    </div>
+                    <div >
+                        <i class="fas fa-users fa-2x text-info dash-icon">S</i>
+                    </div>
+                </div>
+                <div class="dashboard-card">
+                    <?php 
+                    $query1=mysqli_query($conn,"SELECT * from tblclass");                       
+                    $class = mysqli_num_rows($query1);
+                    ?>
+                    <div class="font">Classes</div>
+                    <div class="font">
+                        <?php echo $class;?>
+                    </div>
+                    <div >
+                        <i class="fas fa-chalkboard fa-2x text-primary dash-icon">S</i>
+                    </div>
+                </div>
+                </div>
+                <div>
+                <div class="dashboard-card">
+                    <?php 
+                    $query1=mysqli_query($conn,"SELECT * from tblclassarms");                       
+                    $classArms = mysqli_num_rows($query1);
+                    ?>
+                    <div class="font">Class Arms</div>
+                    <div class="font">
+                        <?php echo $classArms;?>
+                    </div>
+                    <div >
+                        <i class="fas fa-code-branch fa-2x text-success dash-icon">S</i>
+                    </div>
+                </div>
+                <div class="dashboard-card">
+                    <?php 
+                    $query1=mysqli_query($conn,"SELECT * from tblattendance where classId = '$_SESSION[classId]' and classArmId = '$_SESSION[classArmId]'");                       
+                    $totAttendance = mysqli_num_rows($query1);
+                    ?>
+                    <div class="font">Total Student Attendance</div>
+                    <div class="font">
+                        <?php echo $totAttendance;?>
+                    </div>
+                    <div >
+                        <i class="fas fa-calendar fa-2x text-warning dash-icon">S</i>
+                    </div>
+                </div>
+                </div>
+            </div>
+        </div>
+
+
+
+    </div>
+    <script src="https://kit.fontawesome.com/a9ad840a6f.js" crossorigin="anonymous"></script>
+
+</body>
+
+</html>

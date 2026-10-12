@@ -1,0 +1,183 @@
+body{
+ background-color: #e1eaea;
+ margin: 0px;
+ padding: 0px;
+ font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.home-image{
+    width: 100%;
+    height: 500px;
+    
+}
+.macondo-regular {
+    font-family: "Macondo", serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+.font{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.login-container{
+    background-color: #fff;
+    width: 400px;
+    display: block;
+    margin: 40px auto;
+    padding: 15px 20px;
+    box-shadow: 1px 3px 4px 3px gray;
+}
+.login-container:hover{
+    box-shadow: 3px 1px 4px 3px gray;
+}
+
+.align{
+    text-align: center;
+}
+.login-btn{
+    background-color: #809fff;
+    border: 2px solid #00134d;
+   display: block;
+   color:#fff;
+   margin: 48px auto;
+   width: 180px;
+   font-size: 28px;
+   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+   padding: 5px ;
+   text-decoration: none;
+   box-shadow: 1px 0px 5px 1px rgb(75, 67, 67);
+}
+.login-btn:hover{
+    cursor: pointer;
+    background-color: #00134d;
+}
+.side-text{
+    font-size: 23px;
+    color: rgb(88, 73, 73);
+}
+
+.name-icon{
+    padding: 20px;
+    color: rgb(151, 144, 144);
+}
+.icon{
+    padding: 10px;
+    font-size: 25px;
+    width: 30px;
+    
+    
+}
+.icon-container{
+    width: 310px;
+    color:#00134d;
+   padding: 8px 10px;
+}
+.icon-container:hover{
+    cursor: pointer;
+    background-image: linear-gradient( 109.6deg,  rgba(45,116,213,1) 11.2%, rgb(79, 105, 221) 91.2% );
+    color: #fff;
+    padding: 5px 8px;
+    width: 270px;
+    margin-top: 2px;
+    
+}
+.sidebar-container{
+    width: 280px;
+    height:auto;
+    background-color: #fff;
+    visibility: visible;
+}
+.head-icon{
+    color: #fff;
+}
+.header{
+    width: 1350px;
+    background-image: linear-gradient( 109.6deg,  rgba(45,116,213,1) 11.2%, rgba(121,137,212,1) 91.2% );
+}
+.icon-name-container{
+    background-color: aquamarine;
+}
+.sub-icon-container{
+    margin: 5px;
+    padding: 5px;
+}
+.icon-sub-item{
+    margin: 15px;
+    margin-top: 10px;
+    padding: 5px ;
+    color: #4d4d33;
+    font-size: 20px;
+    text-decoration: none;
+}
+.icon-sub-item:hover{
+    color: #fff;
+}
+.project-name{
+    font-size: 35px;
+    text-align: center;
+}
+.btn{
+    width: 260px;
+    background-color: #00cc44;
+    border: none;
+    font-size: 30px;
+}
+.in-width{
+    width: 280px;
+}
+.table,tr,td,th{
+    border: 1px solid grey;
+    border-collapse: collapse;
+    padding: 5px 10px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    width: 900px;
+    font-size: 20px;
+    margin-bottom: 30px;
+    text-align: center;
+}
+.thead-light{
+    font-size: 20px;
+}
+.table-body{
+    font-size: 20px;
+    text-align: center;
+}
+.table-body,tr:hover{
+    background-color: #e1eaea;
+}
+
+.logout-item{
+text-decoration: none;
+font-size: 20px;
+border: 1px solid #000;
+color: #000;
+padding: 5px 15px;
+background-color: #92a5e0;
+}
+.logout-item:hover{
+    box-shadow: 1px 1px 2px 2px gray;
+}
+.thead-light{
+    background-color: #e1eaea;
+    padding-top: 10px;
+}
+.statusMsg{
+    background-color: #41e779;
+    width:fit-content;
+    margin: 10px;
+    font-size: 18px;
+    padding: 6px 10px;
+    border-radius: 5px;
+}
+.statusMsgErr{
+    background-color:rgb(250, 122, 122);
+    width:fit-content;
+    margin: 10px;
+    font-size: 18px;
+    padding: 6px 10px;
+    border-radius: 5px;
+}
+.close-icon{
+    width: 20px;
+    margin-left: 340px;
+}
